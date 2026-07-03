@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<title>Choose Testament</title>
+
+</head>
+
+<body>
+
+<div class="w3-display-container landing-wrap">
+
+<div class="w3-display-middle" style="width:100%;">
+
+<div class="landing-card w3-center">
+
+<h1 class="main-title">ROSE BIBLE</h1>
+
+<div class="subtitle">
+Choose a Testament
+</div>
+
+<div class="neon-divider"></div>
+
+<br>
+
+<button class="neon-btn"
+onclick="document.getElementById('oldModal').style.display='block'">
+
+Old Testament
+
+</button>
+
+&nbsp;&nbsp;
+
+<button class="neon-btn"
+onclick="document.getElementById('newModal').style.display='block'">
+
+New Testament
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Old Testament Modal -->
+
+<div id="oldModal"
+class="w3-modal">
+
+<div class="w3-modal-content
+w3-animate-top
+w3-black
+w3-padding
+w3-round-large">
+
+<span
+onclick="document.getElementById('oldModal').style.display='none'"
+class="w3-button
+w3-display-topright">
+
+&times;
+
+</span>
+
+<h2 class="w3-center">
+Old Testament
+</h2>
+
+<div id="oldBooks"></div>
+
+</div>
+
+</div>
+
+<!-- New Testament Modal -->
+
+<div id="newModal"
+class="w3-modal">
+
+<div class="w3-modal-content
+w3-animate-top
+w3-black
+w3-padding
+w3-round-large">
+
+<span
+onclick="document.getElementById('newModal').style.display='none'"
+class="w3-button
+w3-display-topright">
+
+&times;
+
+</span>
+
+<h2 class="w3-center">
+New Testament
+</h2>
+
+<div id="newBooks"></div>
+
+</div>
+
+</div>
+
+<script src="books.js"></script>
+
+</body>
+
+</html>
