@@ -1,0 +1,138 @@
+/* ===============================
+   Clickable Strong's word
+   =============================== */
+   .word {
+    cursor: pointer;
+    color: inherit;  /* inherit red/black/whatever from the parent */
+  }
+  
+  .word:hover {
+    text-decoration: underline;  /* optional nicer hover */
+  }
+  
+  /* ===============================
+     Light / Dark Mode Body
+     =============================== */
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
+  
+  /* ===============================
+     Images & Audio
+     =============================== */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  audio {
+    width: 390px;
+  }
+  
+  /* ===============================
+     Strong's Modal (fixed colors)
+     =============================== */
+  /* Modal container */
+  .strongs-modal {
+    background-color: #f1f1f1;   /* light grey body */
+    color: #000000;              /* dark text */
+    border-radius: 26px;         /* soft rounded corners */
+    padding: 0;
+    overflow: hidden;
+    max-width: 500px;
+    margin: 60px auto;
+  }
+  
+  /* Header - always w3-teal */
+  .strongs-header {
+    background-color: #009688;   /* w3-teal */
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+  
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+  }
+  
+  /* Footer - always w3-teal */
+  .strongs-footer {
+    background-color: #009688;   /* w3-teal */
+    color: white;
+    padding: 10px;
+    text-align: right;
+  
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+  }
+  
+  /* Close button in footer */
+  .strongs-footer button {
+    background-color: #ffffff;
+    color: #009688;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .strongs-footer button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Modal text sections */
+  #strongsLemma {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  #strongsTranslit {
+    font-style: italic;
+    opacity: 0.8;
+  }
+  
+  .strongs-section-title {
+    font-weight: bold;
+    margin-top: 12px;
+  }
+  
+  #strongsDef,
+  #strongsKJV {
+    margin-bottom: 10px;
+  }
+  
+  /* ===============================
+     Paragraph Mode (simple + 4-verse chunks)
+     =============================== */
+  
+  /* Old simple paragraph mode (all verses flowing) */
+  #font.paragraph-mode .w3-justify {
+    display: inline;  /* put verses on one line */
+    margin: 0;        /* remove bottom margin */
+  }
+  
+  #font.paragraph-mode .w3-justify::after {
+    content: " ";
+  }
+  
+  /* 4-verse justified paragraph chunks */
+  #font.paragraph-mode .paragraph-chunk {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  #font.paragraph-mode .paragraph-chunk p {
+    display: inline;
+  }
+  
+  #font.paragraph-mode .paragraph-chunk p::after {
+    content: " ";
+  }
+  
